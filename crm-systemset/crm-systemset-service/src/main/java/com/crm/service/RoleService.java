@@ -4,9 +4,10 @@ import com.crm.bean.Role;
 import com.crm.euums.ExceptionEnums;
 import com.crm.exception.CrmException;
 import com.crm.mapper.RoleMapper;
-import com.netflix.discovery.converters.jackson.EurekaXmlJacksonCodec;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class RoleService {
@@ -19,4 +20,5 @@ public class RoleService {
         }
       return roleMapper.selectByPrimaryKey(id);
     }
+
 }
